@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основные финансовые показатели</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="rgz.js"></script>
+    <style>
+        .menu {
+            height: 1480px;
+        }
+    </style>
+</head>
+
+<body onload="ShowTable()">
+    <main>
+        <div class="menu">
+            <div style="padding: 50px 0 15px 85px; position: relative;"> 
+                <img src="logo.png" width="150" height="89">
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html" >КОМПАНИЯ</a></li>
+                    <li><a href="page_2.html" style="color: rgb(169,137,99)">ОСНОВНЫЕ ФИНАНСОВЫЕ ПОКАЗАТЕЛИ</a></li>
+                    <li><a href="page_3.html">КОНТАКТНЫЕ ДАННЫЕ</a></li>
+                    <li><a href="page_4.html">ВИДЕО</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pages">
+            <span style="position: relative; opacity:0.8"><img src="photo_6.jpg"  width="1151px" height="390px" ></span>
+            <h1 style="text-align: center; margin-top: 40px;   font-weight: bold;">Основные финансовые показатели</h1>
+            
+            <h2 style="margin: 30px 0 25px 80px;  text-decoration: underline;   font-weight: bold;">Капитализация</h2>
+            <div class="text">
+                <span style="font-weight: bold">Привилегированные акции:</span> 240 918.50 млн RUB 
+            </div>
+            <div class="text" style="margin-top: 5px;">
+                <span style="font-weight: bold">Непривилегированные акции:</span> 869 570.71 млн RUB
+            </div>
+            <h2 style="margin: 30px 0 25px 80px;  text-decoration: underline;   font-weight: bold;">Число акций</h2>
+            <div class="text">
+                <span style="font-weight: bold">Привилегированные акции:</span> 7 702.00 млн шт
+            </div>
+            <div class="text" style="margin-top: 5px;">
+                <span style="font-weight: bold">Непривилегированные акции:</span> 35 725.99 млн шт
+            </div>
+            <div class="text">
+                <span style="font-weight: bold; text-decoration: underline; margin-top: 5px;">Общее число акций:</span> 43 427.99 млн шт
+            </div>
+            <h2 style="margin: 30px 0 25px 80px;  text-decoration: underline; font-weight: bold;">Цены закрытия за апрель</h2>
+            <table border="1" id = "Price" style="width: 73%; position:absolute; margin: 845px 0 0 360px; border-color: rgb(65,108,140);"></table>
+            
+            <div class="text" style="margin-top: 555px;">
+                <span style="font-weight: bold">Максимальная цена: </span><span id="Max"></span>
+            </div>
+            <div class="text" style="margin-top: 10px;">
+                <span style="font-weight: bold">Минимальная цена: </span><span id="Min"></span>
+            </div>
+
+            <div class="text">
+                <span style="font-weight: bold">Среднеквадратическое отклонение цены: </span><span id="StandDev"></span>
+            </div>
+        </div>
+    </main>   
+</body>
+</html>
